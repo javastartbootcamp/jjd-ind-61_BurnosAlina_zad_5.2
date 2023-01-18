@@ -18,9 +18,11 @@ public class Room {
             if (temperature >= limitTemperature + 1) {
                 temperature -= 1;
                 return true;
+            } else if (temperature == limitTemperature) {
+                return false;
             } else {
                 temperature = limitTemperature;
-                return false;
+                return true;
             }
         }
         return false;
