@@ -20,12 +20,11 @@ public class Room {
                 return true;
             } else {
                 temperature = limitTemperature;
-                return true;
+                return false;
             }
         }
         return false;
     }
-
 
     int getSquareMeters() {
         return squareMeters;
@@ -51,11 +50,11 @@ public class Room {
         this.airConditioner = airConditioner;
     }
 
-    public double getLimitTemperature() {
+    double getLimitTemperature() {
         return limitTemperature;
     }
 
-    public void setLimitTemperature(double limitTemperature) {
+    void setLimitTemperature(double limitTemperature) {
         this.limitTemperature = limitTemperature;
     }
 }
